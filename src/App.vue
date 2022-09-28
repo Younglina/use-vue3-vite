@@ -2,10 +2,7 @@
 </script>
 
 <template>
-  <div class="bg-red-900 rounded-xl p-8 md:flex md:p-0">
-    
-  </div>
+  <router-view />
 </template>
 <style lang="scss" scoped>
-  
 </style>
