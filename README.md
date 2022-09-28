@@ -29,16 +29,26 @@ npm create vite@latest
 ### 安装
 ```
 npm install -d tailwindcss postcss autoprefixer
-npx tailwindcss init // 初始化配置文件
+npx tailwindcss init // 初始化配置文件tailwind.config.js,postcss.config.js
 ```
 
 ### 配置
 ```
+//tailwind.config.js
 module.exports = {
   // 应用文件类型
   content: ['./index.html', './src/**/*.{vue,js}'],
   theme: {
-    extend: {},
+    extend: {
+      // 重置fontSize:[fontSize,lineHeight]
+      fontSize: {
+        xs: ['0.25rem', '0.35rem'],
+        sm: ['0.35rem', '0.45rem'],
+        base: ['0.45rem', '0.55rem'],
+        lg: ['0.55rem', '0.65rem'],
+        xl: ['0.65rem', '0.75rem'],
+      }
+    },
   },
   plugins: [],
   // 配置提示 需要vscode安装tailwind插件

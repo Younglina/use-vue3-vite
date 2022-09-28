@@ -5,6 +5,7 @@ specifiers:
   '@vueuse/core': ^9.3.0
   autoprefixer: ^10.4.12
   axios: ^0.27.2
+  js-cookie: ^3.0.1
   postcss: ^8.4.16
   sass: ^1.55.0
   tailwindcss: ^3.1.8
@@ -16,6 +17,7 @@ specifiers:
 dependencies:
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/9.3.0_vue@3.2.39
   axios: registry.npmmirror.com/axios/0.27.2
+  js-cookie: registry.npmmirror.com/js-cookie/3.0.1
   vue: registry.npmmirror.com/vue/3.2.39
   vue-router: registry.npmmirror.com/vue-router/4.0.14_vue@3.2.39
   vuex: registry.npmmirror.com/vuex/4.0.2_vue@3.2.39
@@ -870,6 +872,13 @@ packages:
     version: 7.0.0
     engines: {node: '>=0.12.0'}
     dev: true
+
+  registry.npmmirror.com/js-cookie/3.0.1:
+    resolution: {integrity: sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/js-cookie/-/js-cookie-3.0.1.tgz}
+    name: js-cookie
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dev: false
 
   registry.npmmirror.com/lilconfig/2.0.6:
     resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lilconfig/-/lilconfig-2.0.6.tgz}
