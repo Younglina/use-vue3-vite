@@ -1,29 +1,18 @@
 <script setup>
-import { getHotPlayListCategory, getPersonalized } from '@/api/music';
-import { ref } from 'vue';
-import MyNav from './components/nav/index.vue'
+import { getHotPlayListCategory, getPersonalized } from '@/api/music'
+import playCard from '@/components/play-card.vue'
 
-const category = ref([])
-getHotPlayListCategory().then(res => {
-  category.value = res.tags
-})
+import { ref } from 'vue'
 
 const hotList = ref([])
-getPersonalized().then(res => {
+getPersonalized().then((res) => {
   hotList.value = res.result
 })
 </script>
 
 <template>
-  <my-nav :category="category" />
-  <ul>
-    <li v-for="item in hotList" :key="item.id">
-      <img :src="item.picUrl+'?param=224y224'" alt="">
-      <span class="text-sm">{{item.name}}</span>
-    </li>
-  </ul>
+  <playCard :cards="hotList" />
 </template>
 
 <style scoped lang='scss'>
-
 </style>

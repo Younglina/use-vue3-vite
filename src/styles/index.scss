@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background: transparent;
+  margin: 4px;
+  border-radius: 20%;
+  transition: .2s;
+}

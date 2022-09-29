@@ -1,4 +1,9 @@
 import Cookies from 'js-cookie'
+import dayjs from 'dayjs'
+
+export function formatDate(v, format = 'YYYY-MM-DD') {
+  return dayjs(v).format(format)
+}
 
 export function setCookies(string) {
   const cookies = string.split(';;')

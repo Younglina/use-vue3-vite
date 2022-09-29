@@ -1,8 +1,14 @@
 <script setup>
+  import pageHeader from './views/layout/header.vue'
 </script>
-
 <template>
-  <router-view />
+  <page-header></page-header>
+  <main>
+    <router-view />
+  </main>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
+  #app{
+    padding: 0 10%;
+  }
 </style>
