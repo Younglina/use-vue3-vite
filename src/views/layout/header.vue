@@ -1,10 +1,15 @@
 <script setup>
+import { useRouter } from 'vue-router'
+const router = useRouter()
+  const changePage = (c) => {
+    router.go(c)
+  }
 </script>
 <template>
   <header class="sticky top-0 left-0 z-10 h-[64px] flex items-center backdrop-saturate-150 backdrop-blur-lg bg-white/80">
     <div class="flex items-center">
-      <wy-button name="left" />
-      <wy-button name="right" />
+      <wy-button name="left" @click="changePage(-1)"/>
+      <wy-button name="right" @click="changePage(1)"/>
     </div>
     <div class="flex items-center flex-1 justify-center space-x-2">
       <wy-button name="首页" type="span" extClass="text-base text-blue-600"/>

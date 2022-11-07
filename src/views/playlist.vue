@@ -22,10 +22,10 @@
       </div>
     </div>
   </div>
-  <div class="flex pb-3">
+  <div class="flex pb-3" v-if="playlistInfo.id">
     <div class="flex-1 p-[10px] rounded-[10px] drop-shadow-xl bg-white">
       <div class="text-lg">歌单列表</div>
-      <!-- <SongList :id="playlistId"></SongList> -->
+      <SongList :id="playlistId"></SongList>
     </div>
     <div class="ml-[20px] p-[10px] rounded-[10px] drop-shadow-xl bg-white">
       <div class="text-lg">近期收藏</div>
@@ -46,7 +46,7 @@ import { formatDate } from '@/utils/useTool.js'
 import { useRoute } from 'vue-router'
 import { onBeforeMount, ref } from 'vue'
 
-// import SongList from '@/components/SongList.vue'
+import SongList from '@/components/song-list.vue'
 
 onBeforeMount(() => {
   initData()

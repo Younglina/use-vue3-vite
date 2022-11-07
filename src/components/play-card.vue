@@ -20,7 +20,7 @@ const toDetail = (id) => {
         <div
           class="play-icon absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] invisible backdrop-saturate-150 backdrop-blur-lg bg-white/98 rounded-full w-[54px] h-[54px] flex items-center justify-center cursor-pointer"
         >
-          <svg-icon name="play" size="32" class="ml-[2px]" />
+          <svg-icon name="play" size="32" class="ml-[2px] text-white"/>
         </div>
         <!-- <span class="text-xs">{{ item.playCount }}</span> -->
       </div>
